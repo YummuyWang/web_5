@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生成绩管理</title>
+    <link rel="stylesheet" type="text/css" href="4.css">
+
+</head>
+<body>
+<div>
+    <table id="title" border="1">
+        <tr>
+            <th style="width: 80px">姓名</th>
+            <th style="width: 80px">班级</th>
+            <th style="width: 40px">语文</th>
+            <th style="width: 40px">数学</th>
+            <th style="width: 40px">英语</th>
+            <th style="width: 40px">理综</th>
+        </tr>
+    </table>
+</div>
+<form>
+    <table class="table" id="add-info">
+        <tr>
+            <td>
+                <input type="text" id="nName" style="width: 80px">
+            </td>
+            <td><input type="text" id="nClass" style="width: 80px">
+            </td>
+            <td><input type="text" id="nChi" style="width: 40px">
+            </td>
+            <td><input type="text" id="nMath" style="width: 40px">
+            </td>
+            <td><input type="text" id="nEng" style="width: 40px">
+            </td>
+            <td><input type="text" id="nScien" style="width: 40px">
+            </td>
+            <td>
+                <input type="button" class="btn" value="提交" onclick="addHandler()">
+                <input type="reset" value="reset" id="resetButton" style="display: none">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<div>
+    <table border="1" id="info-list">
+        <thead>
+        <tr>
+            <td style="width: 80px">姓名</td>
+            <td style="width: 80px">班级</td>
+            <td style="width: 30px">语文</td>
+            <td style="width: 30px">数学</td>
+            <td style="width: 30px">英语</td>
+            <td style="width: 30px">理综</td>
+            <td style="width: 30px">总分</td>
+        </tr>
+        </thead>
+        <tbody id="info-body">
+        </tbody>
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td><input type="button" value="降序" onclick="sorry()"></td>
+            <td><input type="button" value="降序" onclick="sorry()"></td>
+            <td><input type="button" value="降序" onclick="sorry()"></td>
+            <td><input type="button" value="降序" onclick="sorry()"></td>
+            <td><input type="button" value="降序" onclick="sorry()"></td>
+
+        </tr>
+    </table>
+</div>
+<script type="text/javascript" src="4.js"></script>
+</body>
+</html>
